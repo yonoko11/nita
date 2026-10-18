@@ -602,15 +602,9 @@
    "index": 16,
    "cup": 4,
    "cup_ja": "こうらカップ",
-   "pb": 213333,
-   "pb_date": "2026-10-18",
-   "history": [
-    {
-     "time": 213333,
-     "date": "2026-10-18",
-     "gain": null
-    }
-   ],
+   "pb": null,
+   "pb_date": null,
+   "history": [],
    "wr": 86780,
    "wr_since": null,
    "wr_combo": [
@@ -623,8 +617,8 @@
      "name": "くまライド"
     }
    ],
-   "diff": 126553,
-   "pct": 145.8319889375432
+   "diff": null,
+   "pct": null
   },
   {
    "abbr": "rMC",
@@ -2603,9 +2597,9 @@
   }
  ],
  "total": {
-  "count": 17,
-  "pb": 2062488,
-  "wr": 1917386
+  "count": 16,
+  "pb": 1849155,
+  "wr": 1830606
  },
- "updated_at": "2026-10-18 13:03"
+ "updated_at": "2026-10-18 13:04"
 }
