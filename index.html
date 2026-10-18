@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MK8DX YONOKOのNITA記録</title>
+<meta name="description" content="マリオカート8DX の NITA（150cc、Meta Only）96 コースの自己ベストと WR の差">
+<style>
+  :root {
+    --bg: #000;
+    --text: #fff;
+    --sub: #9a9a9a;
+    --line: #262626;
+    --hover: #111;
+    --good: #7fd88f;   /* WR との差が小さい */
+    --far: #e39a9a;    /* WR との差が大きい */
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); }
+  body {
+    font: 15px/1.5 "Segoe UI", "Yu Gothic UI", "Hiragino Sans", Meiryo, sans-serif;
+    padding: 20px 24px 40px;
+  }
+  a { color: var(--text); }
+  .num { font-variant-numeric: tabular-nums; }
+  button {
+    font: inherit; color: var(--text); background: var(--bg);
+    border: 1px solid #555; border-radius: 4px; padding: 4px 12px; cursor: pointer;
+  }
+  button:hover { border-color: var(--text); }
+  input {
+    font: inherit; color: var(--text); background: var(--bg);
+    border: 1px solid #555; border-radius: 4px; padding: 4px 8px;
+  }
+  input:focus { outline: none; border-color: var(--text); }
+
+  header { display: flex; align-items: baseline; gap: 8px 16px; flex-wrap: wrap; }
+  h1 { font-size: 24px; font-weight: 600; margin: 0; }
+  .category { color: var(--sub); font-size: 14px; }
+  .updated { margin-left: auto; color: var(--sub); font-size: 13px; }
+  .source { color: var(--sub); font-size: 13px; margin: 6px 0 0; }
+  .source a { color: var(--text); }
+
+  .summary {
+    display: flex; gap: 12px 28px; flex-wrap: wrap; margin: 16px 0;
+    padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  }
+  .summary div { display: flex; flex-direction: column; }
+  .summary span { color: var(--sub); font-size: 12px; }
+  .summary b { font-size: 20px; font-weight: 600; }
+
+  .filters { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-bottom: 8px; }
+  .cup {
+    width: 40px; height: 40px; padding: 3px; border: 1px solid transparent; border-radius: 6px;
+    background: none; display: grid; place-items: center;
+  }
+  .cup img { width: 32px; height: 32px; object-fit: contain; opacity: .45; }
+  .cup:hover img, .cup.on img { opacity: 1; }
+  .cup.on { border-color: var(--text); }
+  .filters .all { height: 40px; }
+  .filters .on-text { border-color: var(--text); }
+  .filters .gap { width: 12px; }
+  .filters label { color: var(--sub); display: flex; gap: 6px; align-items: center; cursor: pointer; }
+  .filters input[type="search"] { width: 180px; }
+
+  .table-wrap { overflow-x: auto; }  /* 狭い画面では表を横にずらして見る */
+  table { border-collapse: collapse; width: 100%; }
+  th {
+    text-align: left; font-weight: 400; font-size: 12px; color: var(--sub);
+    padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap;
+    cursor: pointer; user-select: none;
+  }
+  th:hover { color: var(--text); }
+  th.sorted { color: var(--text); }
+  th.r, td.r { text-align: right; }
+  td { padding: 6px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tr.course { cursor: pointer; }
+  tr.course:hover td { background: var(--hover); }
+  tr.course.open td { background: var(--hover); border-bottom-color: transparent; }
+  td.emblem img { width: 28px; height: 28px; object-fit: contain; display: block; }
+  td.name .wrap { display: flex; align-items: center; gap: 12px; }
+  td.name img { width: 70px; height: 48px; object-fit: cover; border-radius: 3px; display: block; background: #111; }
+  td.name .en { color: var(--sub); font-size: 12px; }
+  .time { font-size: 16px; }
+  .wr-cell { display: inline-flex; align-items: center; gap: 4px; }
+  .wr-cell img.combo { height: 28px; width: 34px; object-fit: contain; }
+  .wr-cell img.combo:last-of-type { margin-right: 8px; }
+  .none { color: #555; }
+  .sub { color: var(--sub); }
+  .good { color: var(--good); }
+  .far { color: var(--far); }
+
+  tr.detail > td { background: var(--hover); padding: 6px 10px 18px 100px; white-space: normal; }
+  .history { border-collapse: collapse; width: auto; }
+  .history th { cursor: default; padding: 4px 24px 4px 0; }
+  .history th:hover { color: var(--sub); }
+  .history td { border: none; padding: 3px 24px 3px 0; background: none; }
+  .history tr.best td { font-weight: 600; }
+
+  footer { margin-top: 28px; color: var(--sub); font-size: 13px; line-height: 1.8; }
+
+  @media (max-width: 700px) {
+    body { padding: 16px 12px 32px; }
+    h1 { font-size: 20px; }
+    .updated { margin-left: 0; width: 100%; }
+    td.name img, td.name .en { display: none; }
+    .wide { display: none; }  /* 更新日と差（%）は、行を押すと開く履歴や、パソコンで見る */
+    td, th { padding: 6px 5px; }
+    td.emblem img { width: 22px; height: 22px; }
+    .time { font-size: 15px; }
+    .wr-cell img.combo { display: none; }  /* キャラとカートの絵は、パソコンで見る */
+    td.name { white-space: normal; font-size: 13px; line-height: 1.35; min-width: 7em; }
+    .cup { width: 34px; height: 34px; }
+    .cup img { width: 28px; height: 28px; }
+    .filters .all { height: 34px; }
+    tr.detail > td { padding: 6px 6px 14px 16px; }
+    .filters input[type="search"] { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>MK8DX YONOKOのNITA記録</h1>
+  <span class="category">150cc ／ Meta Only（VSカスタムのみ）</span>
+  <span class="updated num" id="updated"></span>
+</header>
+<p class="source">WR の出典：<a id="source-top" target="_blank" rel="noopener">MK8DX NITA</a>（150cc、Meta Only / VSカスタムのみ の 1 位）</p>
+
+<div class="summary" id="summary"></div>
+
+<div class="filters" id="filters"></div>
+
+<div class="table-wrap">
+  <table>
+    <thead><tr id="head"></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+</div>
+
+<footer>
+  WR の出典：<a id="source-bottom" target="_blank" rel="noopener">MK8DX NITA</a>（150cc、Meta Only / VSカスタムのみ の 1 位のタイム）<br>
+  WR 更新日は、この記録のページが WR の変化に気づいた日です（実際に記録が出た日とは限りません）。<br>
+  コースを押すと、自己ベストの履歴が開きます。
+</footer>
+
+<script>
+// 公開ページ（見るだけ）。中身は同じフォルダの data.json（mk8dx-nita のアプリが書き出す）。
+// 並べ替え・絞り込み・時間の書き方は、管理画面（manage.html）と同じ決まり。
+let state = null;
+let sortKey = "index", sortDesc = false;
+let cupFilter = null;      // 絞り込むカップの番号（null ならすべて）
+let onlyEmpty = false;     // 自己ベスト未入力のコースだけ
+let search = "";
+let openAbbr = null;       // 履歴を開いているコース
+
+const COLUMNS = [
+  { key: "index", label: "コース", cls: "", span: 2 },
+  { key: "pb", label: "自己ベスト", cls: "r" },
+  { key: "pb_date", label: "PB 更新日", cls: "wide" },  // wide：スマホの幅では隠す列
+  { key: "wr", label: "WR", cls: "r" },
+  { key: "wr_since", label: "WR 更新日", cls: "wide" },
+  { key: "diff", label: "差", cls: "r" },
+  { key: "pct", label: "差（%）", cls: "r wide" },
+];
+
+function fmt(ms) {  // ミリ秒 → 1:39.332（1 時間を超えたら 1:02:03.456）
+  if (ms === null || ms === undefined) return "";
+  const neg = ms < 0; ms = Math.abs(ms);
+  const h = Math.floor(ms / 3600000), m = Math.floor(ms / 60000) % 60;
+  const s = Math.floor(ms / 1000) % 60, f = ms % 1000;
+  const body = (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(s).padStart(2, "0") + "." + String(f).padStart(3, "0");
+  return (neg ? "-" : "") + body;
+}
+function fmtDiff(ms) {  // 差 → +0.791 / -0.123 / +1:02.345
+  if (ms === null || ms === undefined) return "";
+  const a = Math.abs(ms), sign = ms > 0 ? "+" : ms < 0 ? "-" : "±";
+  const text = a >= 60000 ? fmt(a) : (Math.floor(a / 1000) + "." + String(a % 1000).padStart(3, "0"));
+  return sign + text;
+}
+function fmtPct(p) {
+  if (p === null || p === undefined) return "";
+  return (p > 0 ? "+" : p < 0 ? "-" : "±") + Math.abs(p).toFixed(2) + "%";
+}
+function fmtDate(d) { return d ? d.replaceAll("-", "/") : ""; }
+function diffClass(c) {
+  if (c.pct === null) return "";
+  if (c.pct <= 1) return "good";   // WR との差が 1% 以内
+  if (c.pct >= 3) return "far";    // 3% 以上
+  return "";
+}
+function esc(s) { return String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch])); }
+function cupImg(i) { return "images/cup/" + String(i).padStart(2, "0") + ".png"; }
+
+async function load() {
+  try {
+    // 更新したばかりの記録が出るよう、古い写しを使わない
+    state = await (await fetch("data.json?t=" + Date.now(), { cache: "no-store" })).json();
+  } catch (e) {
+    document.getElementById("rows").innerHTML = '<tr><td class="sub">記録を読み込めませんでした。少し待ってから開き直してください。</td></tr>';
+    return;
+  }
+  for (const id of ["source-top", "source-bottom"]) document.getElementById(id).href = state.source_url;
+  render();
+}
+
+function render() {
+  for (const part of [renderUpdated, renderSummary, renderFilters, renderHead, renderRows]) {
+    try { part(); } catch (e) { console.error(e); }  // 1 か所の失敗で全部が消えないように
+  }
+}
+
+function renderUpdated() {
+  document.getElementById("updated").textContent = "最終更新：" + state.updated_at.replaceAll("-", "/");
+}
+
+function renderSummary() {
+  const t = state.total;
+  const entered = state.courses.filter((c) => c.pb !== null).length;
+  const diff = t.count ? t.pb - t.wr : null;
+  document.getElementById("summary").innerHTML = `
+    <div><span>自己ベスト入力済み</span><b class="num">${entered} / ${state.courses.length}</b></div>
+    <div><span>自己ベストの合計（${t.count} コース）</span><b class="num">${t.count ? fmt(t.pb) : "—"}</b></div>
+    <div><span>同じコースの WR の合計</span><b class="num">${t.count ? fmt(t.wr) : "—"}</b></div>
+    <div><span>差</span><b class="num">${t.count ? fmtDiff(diff) + "　" + fmtPct(diff / t.wr * 100) : "—"}</b></div>`;
+}
+
+function renderFilters() {
+  const box = document.getElementById("filters");
+  if (!box.dataset.built) {  // カップの紋章のボタンは最初に 1 回だけ作る
+    box.dataset.built = "1";
+    box.innerHTML = `<button class="all">すべて</button>` +
+      state.cups.map((cup, i) => `<button class="cup" data-cup="${i}" title="${esc(cup.ja)}"><img src="${cupImg(i)}" alt="${esc(cup.ja)}"></button>`).join("") +
+      `<span class="gap"></span><label><input type="checkbox" id="only-empty"> 未入力だけ</label>` +
+      `<span class="gap"></span><input type="search" id="search" placeholder="コース名で探す">`;
+    box.querySelector(".all").onclick = () => { cupFilter = null; render(); };
+    box.querySelectorAll(".cup").forEach((b) => b.onclick = () => {
+      const n = Number(b.dataset.cup);
+      cupFilter = cupFilter === n ? null : n;
+      render();
+    });
+    document.getElementById("only-empty").onchange = (e) => { onlyEmpty = e.target.checked; renderRows(); };
+    document.getElementById("search").oninput = (e) => { search = e.target.value.trim().toLowerCase(); renderRows(); };
+  }
+  box.querySelector(".all").classList.toggle("on-text", cupFilter === null);
+  box.querySelectorAll(".cup").forEach((b) => b.classList.toggle("on", Number(b.dataset.cup) === cupFilter));
+}
+
+function renderHead() {
+  document.getElementById("head").innerHTML = COLUMNS.map((c) => {
+    const mark = c.key === sortKey ? (sortDesc ? " ▼" : " ▲") : "";
+    return `<th class="${c.cls}${c.key === sortKey ? " sorted" : ""}" ${c.span ? `colspan="${c.span}"` : ""} data-key="${c.key}">${c.label}${mark}</th>`;
+  }).join("");
+  document.querySelectorAll("#head th").forEach((th) => th.onclick = () => {
+    const key = th.dataset.key;
+    if (sortKey === key) sortDesc = !sortDesc;
+    else { sortKey = key; sortDesc = key === "diff" || key === "pct"; }  // 差は大きい順から
+    render();
+  });
+}
+
+function visibleCourses() {
+  let list = state.courses.filter((c) =>
+    (cupFilter === null || c.cup === cupFilter) &&
+    (!onlyEmpty || c.pb === null) &&
+    (!search || c.ja.toLowerCase().includes(search) || c.en.toLowerCase().includes(search) || c.abbr.toLowerCase().includes(search)));
+  list.sort((a, b) => {
+    const x = a[sortKey], y = b[sortKey];
+    if (x === null && y === null) return a.index - b.index;
+    if (x === null) return 1;   // 値のないコースはいつも下に
+    if (y === null) return -1;
+    const d = x < y ? -1 : x > y ? 1 : 0;
+    return (sortDesc ? -d : d) || a.index - b.index;
+  });
+  return list;
+}
+
+function comboIcons(c) {  // WR のキャラとカートの絵。マウスを乗せると名前が出る
+  return c.wr_combo.map((icon) =>
+    `<img class="combo" src="images/wr/${esc(icon.id)}.png" alt="${esc(icon.name)}" title="${esc(icon.name)}" onerror="this.remove()">`).join("");
+}
+
+function renderRows() {
+  const tbody = document.getElementById("rows");
+  tbody.innerHTML = visibleCourses().map((c) => {
+    const open = c.abbr === openAbbr;
+    let html = `<tr class="course${open ? " open" : ""}" data-abbr="${esc(c.abbr)}">
+      <td class="emblem"><img src="${cupImg(c.cup)}" alt="" title="${esc(c.cup_ja)}"></td>
+      <td class="name"><div class="wrap"><img src="images/course/${esc(c.abbr)}.png" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
+        <div><div>${esc(c.ja)}</div><div class="en">${esc(c.en)}</div></div></div></td>
+      <td class="r num time">${c.pb !== null ? fmt(c.pb) : '<span class="none">—</span>'}</td>
+      <td class="num sub wide">${fmtDate(c.pb_date)}</td>
+      <td class="r num time"><span class="wr-cell">${comboIcons(c)}${c.wr !== null ? fmt(c.wr) : '<span class="none">—</span>'}</span></td>
+      <td class="num sub wide">${fmtDate(c.wr_since)}</td>
+      <td class="r num time ${diffClass(c)}">${c.diff !== null ? (c.diff <= 0 ? "WR 以上" : fmtDiff(c.diff)) : ""}</td>
+      <td class="r num wide ${diffClass(c)}">${fmtPct(c.pct)}</td>
+    </tr>`;
+    if (open) html += historyRow(c);
+    return html;
+  }).join("");
+  tbody.querySelectorAll("tr.course").forEach((tr) => tr.onclick = () => {
+    openAbbr = openAbbr === tr.dataset.abbr ? null : tr.dataset.abbr;
+    renderRows();
+  });
+}
+
+function historyRow(c) {  // 自己ベストの履歴（新しい順）
+  const rows = [...c.history].reverse().map((h) => `
+    <tr class="${h.time === c.pb ? "best" : ""}">
+      <td class="num sub">${fmtDate(h.date)}</td>
+      <td class="r num">${fmt(h.time)}</td>
+      <td class="r num ${h.gain > 0 ? "good" : "sub"}">${h.gain === null ? "初記録" : h.gain > 0 ? "-" + fmtDiff(h.gain).slice(1) : "更新なし"}</td>
+    </tr>`).join("");
+  return `<tr class="detail"><td colspan="8">
+    ${c.history.length ? `<table class="history">
+      <tr><th>日付</th><th class="r">タイム</th><th class="r">縮めた秒</th></tr>${rows}</table>`
+      : '<div class="sub">まだ記録がありません。</div>'}
+  </td></tr>`;
+}
+
+load();
+</script>
+</body>
+</html>

@@ -1,0 +1,2605 @@
+{
+ "source_url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBXBdqpurvBmR--bzj9RJmgr7HxAoWVZmlwmhaBK-LYf_BbXn8iAPdH-ogBtXiAwxlTkQgn45PkeRW/pubhtml",
+ "cups": [
+  {
+   "ja": "キノコカップ",
+   "en": "Mushroom"
+  },
+  {
+   "ja": "フラワーカップ",
+   "en": "Flower"
+  },
+  {
+   "ja": "スターカップ",
+   "en": "Star"
+  },
+  {
+   "ja": "スペシャルカップ",
+   "en": "Special"
+  },
+  {
+   "ja": "こうらカップ",
+   "en": "Shell"
+  },
+  {
+   "ja": "バナナカップ",
+   "en": "Banana"
+  },
+  {
+   "ja": "このはカップ",
+   "en": "Leaf"
+  },
+  {
+   "ja": "サンダーカップ",
+   "en": "Lightning"
+  },
+  {
+   "ja": "たまごカップ",
+   "en": "Egg"
+  },
+  {
+   "ja": "トライフォースカップ",
+   "en": "Triforce"
+  },
+  {
+   "ja": "どうぶつカップ",
+   "en": "Crossing"
+  },
+  {
+   "ja": "ベルカップ",
+   "en": "Bell"
+  },
+  {
+   "ja": "ゴールデンダッシュカップ",
+   "en": "Golden Dash"
+  },
+  {
+   "ja": "ラッキーキャットカップ",
+   "en": "Lucky Cat"
+  },
+  {
+   "ja": "カブカップ",
+   "en": "Turnip"
+  },
+  {
+   "ja": "プロペラカップ",
+   "en": "Propeller"
+  },
+  {
+   "ja": "ゴロいわカップ",
+   "en": "Rock"
+  },
+  {
+   "ja": "ムーンカップ",
+   "en": "Moon"
+  },
+  {
+   "ja": "フルーツカップ",
+   "en": "Fruit"
+  },
+  {
+   "ja": "ブーメランカップ",
+   "en": "Boomerang"
+  },
+  {
+   "ja": "ハネカップ",
+   "en": "Feather"
+  },
+  {
+   "ja": "チェリーカップ",
+   "en": "Cherry"
+  },
+  {
+   "ja": "ドングリカップ",
+   "en": "Acorn"
+  },
+  {
+   "ja": "トゲゾーカップ",
+   "en": "Spiny"
+  }
+ ],
+ "courses": [
+  {
+   "abbr": "MKS",
+   "en": "Mario Kart Stadium",
+   "ja": "マリオカートスタジアム",
+   "index": 0,
+   "cup": 0,
+   "cup_ja": "キノコカップ",
+   "pb": 100270,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 100270,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 99332,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 938,
+   "pct": 0.9443079772882856
+  },
+  {
+   "abbr": "WP",
+   "en": "Water Park",
+   "ja": "ウォーターパーク",
+   "index": 1,
+   "cup": 0,
+   "cup_ja": "キノコカップ",
+   "pb": 101343,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 101343,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 101327,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 16,
+   "pct": 0.015790460587997275
+  },
+  {
+   "abbr": "SSC",
+   "en": "Sweet Sweet Canyon",
+   "ja": "スイーツキャニオン",
+   "index": 2,
+   "cup": 0,
+   "cup_ja": "キノコカップ",
+   "pb": 114109,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 114109,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 113303,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 806,
+   "pct": 0.7113668658376212
+  },
+  {
+   "abbr": "TR",
+   "en": "Thwomp Ruins",
+   "ja": "ドッスンいせき",
+   "index": 3,
+   "cup": 0,
+   "cup_ja": "キノコカップ",
+   "pb": 112680,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 112680,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 111820,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 860,
+   "pct": 0.769093185476659
+  },
+  {
+   "abbr": "MC",
+   "en": "Mario Circuit",
+   "ja": "マリオサーキット",
+   "index": 4,
+   "cup": 1,
+   "cup_ja": "フラワーカップ",
+   "pb": 108264,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 108264,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 107877,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 387,
+   "pct": 0.35874190049778915
+  },
+  {
+   "abbr": "TH",
+   "en": "Toad Harbor",
+   "ja": "キノピオハーバー",
+   "index": 5,
+   "cup": 1,
+   "cup_ja": "フラワーカップ",
+   "pb": 126000,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 126000,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 124610,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 1390,
+   "pct": 1.115480298531418
+  },
+  {
+   "abbr": "TM",
+   "en": "Twisted Mansion",
+   "ja": "ねじれマンション",
+   "index": 6,
+   "cup": 1,
+   "cup_ja": "フラワーカップ",
+   "pb": 119013,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 119013,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 118640,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 373,
+   "pct": 0.3143964935940661
+  },
+  {
+   "abbr": "SGF",
+   "en": "Shy Guy Falls",
+   "ja": "ヘイホーこうざん",
+   "index": 7,
+   "cup": 1,
+   "cup_ja": "フラワーカップ",
+   "pb": 122071,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 122071,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 117956,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 4115,
+   "pct": 3.48858896537692
+  },
+  {
+   "abbr": "SA",
+   "en": "Sunshine Airport",
+   "ja": "サンシャインくうこう",
+   "index": 8,
+   "cup": 2,
+   "cup_ja": "スターカップ",
+   "pb": 121563,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 121563,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 120357,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 1206,
+   "pct": 1.0020189934943544
+  },
+  {
+   "abbr": "DS",
+   "en": "Dolphin Shoals",
+   "ja": "ドルフィンみさき",
+   "index": 9,
+   "cup": 2,
+   "cup_ja": "スターカップ",
+   "pb": 117851,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 117851,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 116736,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 1115,
+   "pct": 0.9551466557017545
+  },
+  {
+   "abbr": "Ed",
+   "en": "Electrodrome",
+   "ja": "エレクトロドリーム",
+   "index": 10,
+   "cup": 2,
+   "cup_ja": "スターカップ",
+   "pb": 121184,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 121184,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 120429,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 755,
+   "pct": 0.6269254083318802
+  },
+  {
+   "abbr": "MW",
+   "en": "Mount Wario",
+   "ja": "ワリオスノーマウンテン",
+   "index": 11,
+   "cup": 2,
+   "cup_ja": "スターカップ",
+   "pb": 104143,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 104143,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 102983,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 1160,
+   "pct": 1.1263995028305642
+  },
+  {
+   "abbr": "CC",
+   "en": "Cloudtop Cruise",
+   "ja": "スカイガーデン",
+   "index": 12,
+   "cup": 3,
+   "cup_ja": "スペシャルカップ",
+   "pb": 123827,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 123827,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 121587,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "7dd5944cadd5",
+     "name": "トルネード"
+    }
+   ],
+   "diff": 2240,
+   "pct": 1.8423022198096835
+  },
+  {
+   "abbr": "BDD",
+   "en": "Bone-Dry Dunes",
+   "ja": "ホネホネさばく",
+   "index": 13,
+   "cup": 3,
+   "cup_ja": "スペシャルカップ",
+   "pb": 112265,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 112265,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 110839,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 1426,
+   "pct": 1.2865507628181416
+  },
+  {
+   "abbr": "BC",
+   "en": "Bowser's Castle",
+   "ja": "クッパキャッスル",
+   "index": 14,
+   "cup": 3,
+   "cup_ja": "スペシャルカップ",
+   "pb": 123431,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 123431,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 121850,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 1581,
+   "pct": 1.2974969224456299
+  },
+  {
+   "abbr": "RR",
+   "en": "Rainbow Road",
+   "ja": "レインボーロード",
+   "index": 15,
+   "cup": 3,
+   "cup_ja": "スペシャルカップ",
+   "pb": 121141,
+   "pb_date": "2026-10-18",
+   "history": [
+    {
+     "time": 121141,
+     "date": "2026-10-18",
+     "gain": null
+    }
+   ],
+   "wr": 120960,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": 181,
+   "pct": 0.14963624338624337
+  },
+  {
+   "abbr": "rMMM",
+   "en": "Wii Moo Moo Meadows",
+   "ja": "Wii モーモーカントリー",
+   "index": 16,
+   "cup": 4,
+   "cup_ja": "こうらカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 86780,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rMC",
+   "en": "GBA Mario Circuit",
+   "ja": "GBA マリオサーキット",
+   "index": 17,
+   "cup": 4,
+   "cup_ja": "こうらカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 87146,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rCCB",
+   "en": "DS Cheep Cheep Beach",
+   "ja": "DS プクプクビーチ",
+   "index": 18,
+   "cup": 4,
+   "cup_ja": "こうらカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 109096,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rTT",
+   "en": "N64 Toad's Turnpike",
+   "ja": "N64 キノピオハイウェイ",
+   "index": 19,
+   "cup": 4,
+   "cup_ja": "こうらカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 107529,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rDDD",
+   "en": "GCN Dry Dry Desert",
+   "ja": "GC カラカラさばく",
+   "index": 20,
+   "cup": 5,
+   "cup_ja": "バナナカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 120486,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rDP3",
+   "en": "SNES Donut Plains 3",
+   "ja": "SFC ドーナツへいや3",
+   "index": 21,
+   "cup": 5,
+   "cup_ja": "バナナカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 77180,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rRRy",
+   "en": "N64 Royal Raceway",
+   "ja": "N64 ピーチサーキット",
+   "index": 22,
+   "cup": 5,
+   "cup_ja": "バナナカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 118579,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rDKJ",
+   "en": "3DS DK Jungle",
+   "ja": "3DS DKジャングル",
+   "index": 23,
+   "cup": 5,
+   "cup_ja": "バナナカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 122957,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rWS",
+   "en": "DS Wario Stadium",
+   "ja": "DS ワリオスタジアム",
+   "index": 24,
+   "cup": 6,
+   "cup_ja": "このはカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 112486,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rSL",
+   "en": "GCN Sherbet Land",
+   "ja": "GC シャーベットランド",
+   "index": 25,
+   "cup": 6,
+   "cup_ja": "このはカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 109130,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rMP",
+   "en": "3DS Music Park",
+   "ja": "3DS ミュージックパーク",
+   "index": 26,
+   "cup": 6,
+   "cup_ja": "このはカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 111873,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "0909d6175301",
+     "name": "デイジー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rYV",
+   "en": "N64 Yoshi Valley",
+   "ja": "N64 ヨッシーバレー",
+   "index": 27,
+   "cup": 6,
+   "cup_ja": "このはカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 122579,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rTTC",
+   "en": "DS Tick-Tock Clock",
+   "ja": "DS チクタクロック",
+   "index": 28,
+   "cup": 7,
+   "cup_ja": "サンダーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 103681,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rPPS",
+   "en": "3DS Piranha Plant Slide",
+   "ja": "3DS パックンスライダー",
+   "index": 29,
+   "cup": 7,
+   "cup_ja": "サンダーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 123211,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rGV",
+   "en": "Wii Grumble Volcano",
+   "ja": "Wii グラグラかざん",
+   "index": 30,
+   "cup": 7,
+   "cup_ja": "サンダーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 114791,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "0909d6175301",
+     "name": "デイジー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "rRRd",
+   "en": "N64 Rainbow Road",
+   "ja": "N64 レインボーロード",
+   "index": 31,
+   "cup": 7,
+   "cup_ja": "サンダーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 80975,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dYC",
+   "en": "GCN Yoshi Circuit",
+   "ja": "GC ヨッシーサーキット",
+   "index": 32,
+   "cup": 8,
+   "cup_ja": "たまごカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 105908,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "aa017b6093ff",
+     "name": "ピーチ"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dEA",
+   "en": "Excitebike Arena",
+   "ja": "エキサイトバイク",
+   "index": 33,
+   "cup": 8,
+   "cup_ja": "たまごカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 102433,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dDD",
+   "en": "Dragon Driftway",
+   "ja": "ドラゴンロード",
+   "index": 34,
+   "cup": 8,
+   "cup_ja": "たまごカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 105324,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dMC",
+   "en": "Mute City",
+   "ja": "ミュートシティ",
+   "index": 35,
+   "cup": 8,
+   "cup_ja": "たまごカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 114657,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "7dd5944cadd5",
+     "name": "トルネード"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dWGM",
+   "en": "Wii Wario's Gold Mine",
+   "ja": "Wii ワリオこうざん",
+   "index": 36,
+   "cup": 9,
+   "cup_ja": "トライフォースカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 123551,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dRR",
+   "en": "SNES Rainbow Road",
+   "ja": "SFC レインボーロード",
+   "index": 37,
+   "cup": 9,
+   "cup_ja": "トライフォースカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 88456,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "4b069c8fa59f",
+     "name": "ネコクラシカル"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dIIO",
+   "en": "Ice Ice Outpost",
+   "ja": "ツルツルツイスター",
+   "index": 38,
+   "cup": 9,
+   "cup_ja": "トライフォースカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 107684,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dHC",
+   "en": "Hyrule Circuit",
+   "ja": "ハイラルサーキット",
+   "index": 39,
+   "cup": 9,
+   "cup_ja": "トライフォースカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 110785,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dBP",
+   "en": "GCN Baby Park",
+   "ja": "GC ベビィパーク",
+   "index": 40,
+   "cup": 10,
+   "cup_ja": "どうぶつカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 64043,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "7dd5944cadd5",
+     "name": "トルネード"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dCL",
+   "en": "GBA Cheese Land",
+   "ja": "GBA チーズランド",
+   "index": 41,
+   "cup": 10,
+   "cup_ja": "どうぶつカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 108094,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dWW",
+   "en": "Wild Woods",
+   "ja": "ネイチャーロード",
+   "index": 42,
+   "cup": 10,
+   "cup_ja": "どうぶつカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 107584,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dAC",
+   "en": "Animal Crossing",
+   "ja": "どうぶつの森",
+   "index": 43,
+   "cup": 10,
+   "cup_ja": "どうぶつカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 100704,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dNBC",
+   "en": "3DS Neo Bowser City",
+   "ja": "3DS ネオクッパシティ",
+   "index": 44,
+   "cup": 11,
+   "cup_ja": "ベルカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 106187,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dRiR",
+   "en": "GBA Ribbon Road",
+   "ja": "GBA リボンロード",
+   "index": 45,
+   "cup": 11,
+   "cup_ja": "ベルカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 110559,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dSBS",
+   "en": "Super Bell Subway",
+   "ja": "リンリンメトロ",
+   "index": 46,
+   "cup": 11,
+   "cup_ja": "ベルカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 104297,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "dBB",
+   "en": "Big Blue",
+   "ja": "ビッグブルー",
+   "index": 47,
+   "cup": 11,
+   "cup_ja": "ベルカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 85655,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bPP",
+   "en": "Tour Paris Promenade",
+   "ja": "Tour パリプロムナード",
+   "index": 48,
+   "cup": 12,
+   "cup_ja": "ゴールデンダッシュカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 111616,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bTC",
+   "en": "3DS Toad Circuit",
+   "ja": "3DS キノピオサーキット",
+   "index": 49,
+   "cup": 12,
+   "cup_ja": "ゴールデンダッシュカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 83873,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bCMn",
+   "en": "N64 Choco Mountain",
+   "ja": "N64 チョコマウンテン",
+   "index": 50,
+   "cup": 12,
+   "cup_ja": "ゴールデンダッシュカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 113617,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bCMl",
+   "en": "Wii Coconut Mall",
+   "ja": "Wii ココナッツモール",
+   "index": 51,
+   "cup": 12,
+   "cup_ja": "ゴールデンダッシュカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 103695,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bTB",
+   "en": "Tour Tokyo Blur",
+   "ja": "Tour トーキョースクランブル",
+   "index": 52,
+   "cup": 13,
+   "cup_ja": "ラッキーキャットカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 87486,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bSR",
+   "en": "DS Shroom Ridge",
+   "ja": "DS キノコリッジウェイ",
+   "index": 53,
+   "cup": 13,
+   "cup_ja": "ラッキーキャットカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 107572,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bSG",
+   "en": "GBA Sky Garden",
+   "ja": "GBA スカイガーデン",
+   "index": 54,
+   "cup": 13,
+   "cup_ja": "ラッキーキャットカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 89409,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bNH",
+   "en": "Ninja Hideaway",
+   "ja": "Tour ニンニンドージョー",
+   "index": 55,
+   "cup": 13,
+   "cup_ja": "ラッキーキャットカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 113902,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bNYM",
+   "en": "Tour New York Minute",
+   "ja": "Tour ニューヨークドリーム",
+   "index": 56,
+   "cup": 14,
+   "cup_ja": "カブカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 84597,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bMC3",
+   "en": "SNES Mario Circuit 3",
+   "ja": "SFC マリオサーキット3",
+   "index": 57,
+   "cup": 14,
+   "cup_ja": "カブカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 95476,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bKD",
+   "en": "N64 Kalimari Desert",
+   "ja": "N64 カラカラさばく",
+   "index": 58,
+   "cup": 14,
+   "cup_ja": "カブカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 93407,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bWP",
+   "en": "DS Waluigi Pinball",
+   "ja": "DS ワルイージピンボール",
+   "index": 59,
+   "cup": 14,
+   "cup_ja": "カブカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 140341,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bSS",
+   "en": "Tour Sydney Sprint",
+   "ja": "Tour シドニーサンシャイン",
+   "index": 60,
+   "cup": 15,
+   "cup_ja": "プロペラカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 122827,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bSL",
+   "en": "GBA Snow Land",
+   "ja": "GBA スノーランド",
+   "index": 61,
+   "cup": 15,
+   "cup_ja": "プロペラカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 96171,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bMG",
+   "en": "Wii Mushroom Gorge",
+   "ja": "Wii キノコキャニオン",
+   "index": 62,
+   "cup": 15,
+   "cup_ja": "プロペラカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 95342,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bSHS",
+   "en": "Sky-High Sundae",
+   "ja": "アイスビルディング",
+   "index": 63,
+   "cup": 15,
+   "cup_ja": "プロペラカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 116338,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bLL",
+   "en": "Tour London Loop",
+   "ja": "Tour ロンドンアベニュー",
+   "index": 64,
+   "cup": 16,
+   "cup_ja": "ゴロいわカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 131254,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bBL",
+   "en": "GBA Boo Lake",
+   "ja": "GBA テレサレイク",
+   "index": 65,
+   "cup": 16,
+   "cup_ja": "ゴロいわカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 82961,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bRRM",
+   "en": "3DS Rock Rock Mountain",
+   "ja": "3DS ロックロックマウンテン",
+   "index": 66,
+   "cup": 16,
+   "cup_ja": "ゴロいわカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 135574,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bMT",
+   "en": "Wii Maple Treeway",
+   "ja": "Wii メイプルツリーハウス",
+   "index": 67,
+   "cup": 16,
+   "cup_ja": "ゴロいわカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 145512,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bBB",
+   "en": "Tour Berlin Byways",
+   "ja": "Tour ベルリンシュトラーセ",
+   "index": 68,
+   "cup": 17,
+   "cup_ja": "ムーンカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 119152,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bPG",
+   "en": "DS Peach Gardens",
+   "ja": "DS ピーチガーデン",
+   "index": 69,
+   "cup": 17,
+   "cup_ja": "ムーンカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 127645,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bMM",
+   "en": "Merry Mountain",
+   "ja": "Tour メリーメリーマウンテン",
+   "index": 70,
+   "cup": 17,
+   "cup_ja": "ムーンカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 115796,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bRR7",
+   "en": "3DS Rainbow Road",
+   "ja": "3DS レインボーロード",
+   "index": 71,
+   "cup": 17,
+   "cup_ja": "ムーンカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 98312,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bAD",
+   "en": "Tour Amsterdam Drift",
+   "ja": "Tour アムステルダムブルーム",
+   "index": 72,
+   "cup": 18,
+   "cup_ja": "フルーツカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 97631,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "5c583c54444d",
+     "name": "キャサリン"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bRP",
+   "en": "GBA Riverside Park",
+   "ja": "GBA リバーサイドパーク",
+   "index": 73,
+   "cup": 18,
+   "cup_ja": "フルーツカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 91479,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bDKS",
+   "en": "Wii DK Summit",
+   "ja": "Wii DKスノーボードクロス",
+   "index": 74,
+   "cup": 18,
+   "cup_ja": "フルーツカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 116343,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bYI",
+   "en": "Yoshi's Island",
+   "ja": "ヨッシーアイランド",
+   "index": 75,
+   "cup": 18,
+   "cup_ja": "フルーツカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 120250,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bBR",
+   "en": "Tour Bangkok Rush",
+   "ja": "Tour バンコクラッシュ",
+   "index": 76,
+   "cup": 19,
+   "cup_ja": "ブーメランカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 104302,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bMC",
+   "en": "DS Mario Circuit",
+   "ja": "DS マリオサーキット",
+   "index": 77,
+   "cup": 19,
+   "cup_ja": "ブーメランカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 101470,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bWS",
+   "en": "GCN Waluigi Stadium",
+   "ja": "GC ワルイージスタジアム",
+   "index": 78,
+   "cup": 19,
+   "cup_ja": "ブーメランカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 117407,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bSSy",
+   "en": "Tour Singapore Speedway",
+   "ja": "Tour シンガポールスプラッシュ",
+   "index": 79,
+   "cup": 19,
+   "cup_ja": "ブーメランカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 117759,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bAtD",
+   "en": "Tour Athens Dash",
+   "ja": "Tour アテネポリス",
+   "index": 80,
+   "cup": 20,
+   "cup_ja": "ハネカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 100298,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bDC",
+   "en": "GCN Daisy Cruiser",
+   "ja": "GC デイジークルーザー",
+   "index": 81,
+   "cup": 20,
+   "cup_ja": "ハネカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 95620,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bMH",
+   "en": "Wii Moonview Highway",
+   "ja": "Wii ムーンリッジ&ハイウェイ",
+   "index": 82,
+   "cup": 20,
+   "cup_ja": "ハネカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 103938,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bSCS",
+   "en": "Squeaky Clean Sprint",
+   "ja": "シャボンロード",
+   "index": 83,
+   "cup": 20,
+   "cup_ja": "ハネカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 123403,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "5c583c54444d",
+     "name": "キャサリン"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bLAL",
+   "en": "Tour Los Angeles Laps",
+   "ja": "Tour ロサンゼルスコースト",
+   "index": 84,
+   "cup": 21,
+   "cup_ja": "チェリーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 109170,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bSW",
+   "en": "GBA Sunset Wilds",
+   "ja": "GBA サンセットこうや",
+   "index": 85,
+   "cup": 21,
+   "cup_ja": "チェリーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 97096,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bKC",
+   "en": "Wii Koopa Cape",
+   "ja": "Wii ノコノコみさき",
+   "index": 86,
+   "cup": 21,
+   "cup_ja": "チェリーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 120862,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bVV",
+   "en": "Tour Vancouver Velocity",
+   "ja": "Tour バンクーバーバレー",
+   "index": 87,
+   "cup": 21,
+   "cup_ja": "チェリーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 121612,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bRA",
+   "en": "Tour Rome Avanti",
+   "ja": "Tour ローマアバンティ",
+   "index": 88,
+   "cup": 22,
+   "cup_ja": "ドングリカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 107173,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bDKM",
+   "en": "GCN DK Mountain",
+   "ja": "GC DKマウンテン",
+   "index": 89,
+   "cup": 22,
+   "cup_ja": "ドングリカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 130859,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bDCt",
+   "en": "Wii Daisy Circuit",
+   "ja": "Wii デイジーサーキット",
+   "index": 90,
+   "cup": 22,
+   "cup_ja": "ドングリカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 110241,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bPPC",
+   "en": "Tour Piranha Plant Cove",
+   "ja": "Tour パックンしんでん",
+   "index": 91,
+   "cup": 22,
+   "cup_ja": "ドングリカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 122037,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bMD",
+   "en": "Tour Madrid Drive",
+   "ja": "Tour マドリードグランデ",
+   "index": 92,
+   "cup": 23,
+   "cup_ja": "トゲゾーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 119543,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bRIW",
+   "en": "3DS Rosalina's Ice World",
+   "ja": "3DS ロゼッタプラネット",
+   "index": 93,
+   "cup": 23,
+   "cup_ja": "トゲゾーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 119866,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bBC3",
+   "en": "SNES Bowser Castle 3",
+   "ja": "SFC クッパじょう3",
+   "index": 94,
+   "cup": 23,
+   "cup_ja": "トゲゾーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 103114,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "56607099409d",
+     "name": "ヨッシー"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  },
+  {
+   "abbr": "bRRW",
+   "en": "Wii Rainbow Road",
+   "ja": "Wii レインボーロード",
+   "index": 95,
+   "cup": 23,
+   "cup_ja": "トゲゾーカップ",
+   "pb": null,
+   "pb_date": null,
+   "history": [],
+   "wr": 154424,
+   "wr_since": null,
+   "wr_combo": [
+    {
+     "id": "5c583c54444d",
+     "name": "キャサリン"
+    },
+    {
+     "id": "0c76420da035",
+     "name": "くまライド"
+    }
+   ],
+   "diff": null,
+   "pct": null
+  }
+ ],
+ "total": {
+  "count": 16,
+  "pb": 1849155,
+  "wr": 1830606
+ },
+ "updated_at": "2026-10-18 12:56"
+}
