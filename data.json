@@ -630,8 +630,8 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 87146,
-   "wr_since": null,
+   "wr": 87145,
+   "wr_since": "2026-10-21",
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -2230,8 +2230,8 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 95620,
-   "wr_since": null,
+   "wr": 95378,
+   "wr_since": "2026-10-21",
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -2601,5 +2601,5 @@
   "pb": 1849155,
   "wr": 1830606
  },
- "updated_at": "2026-10-18 13:04"
+ "updated_at": "2026-10-21 19:39"
 }
