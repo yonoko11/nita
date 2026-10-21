@@ -85,6 +85,7 @@
   .wr-cell { display: inline-flex; align-items: center; gap: 4px; }
   .wr-cell img.combo { height: 28px; width: 34px; object-fit: contain; }
   .wr-cell img.combo:last-of-type { margin-right: 8px; }
+  .wr-gain { color: var(--text); margin-left: 10px; }
   .none { color: #555; }
   .sub { color: var(--sub); }
   .good { color: var(--good); }
@@ -139,7 +140,7 @@
 
 <footer>
   WR の出典：<a id="source-bottom" target="_blank" rel="noopener">MK8DX NITA</a>（150cc、Meta Only / VSカスタムのみ の 1 位のタイム）<br>
-  WR 更新日は、この記録のページが WR の変化に気づいた日です（実際に記録が出た日とは限りません）。<br>
+  WR 更新日は、この記録のページが WR の変化に気づいた日です（実際に記録が出た日とは限りません）。横の秒は、前の WR から縮んだ秒です。<br>
   コースを押すと、自己ベストの履歴が開きます。
 </footer>
 
@@ -279,6 +280,11 @@ function comboIcons(c) {  // WR のキャラとカートの絵。マウスを乗
     `<img class="combo" src="images/wr/${esc(icon.id)}.png" alt="${esc(icon.name)}" title="${esc(icon.name)}" onerror="this.remove()">`).join("");
 }
 
+function wrGain(c) {  // 前回の WR から縮んだ秒（-0.120）。WR 更新日の横に出す
+  if (c.wr_gain === null || c.wr_gain === undefined) return "";
+  return `<span class="wr-gain" title="前回の WR：${fmt(c.wr + c.wr_gain)}">${fmtDiff(-c.wr_gain)}</span>`;
+}
+
 function renderRows() {
   const tbody = document.getElementById("rows");
   tbody.innerHTML = visibleCourses().map((c) => {
@@ -290,7 +296,7 @@ function renderRows() {
       <td class="r num time">${c.pb !== null ? fmt(c.pb) : '<span class="none">—</span>'}</td>
       <td class="num sub wide">${fmtDate(c.pb_date)}</td>
       <td class="r num time"><span class="wr-cell">${comboIcons(c)}${c.wr !== null ? fmt(c.wr) : '<span class="none">—</span>'}</span></td>
-      <td class="num sub wide">${fmtDate(c.wr_since)}</td>
+      <td class="num sub wide">${fmtDate(c.wr_since)}${wrGain(c)}</td>
       <td class="r num time ${diffClass(c)}">${c.diff !== null ? (c.diff <= 0 ? "WR 以上" : fmtDiff(c.diff)) : ""}</td>
       <td class="r num wide ${diffClass(c)}">${fmtPct(c.pct)}</td>
     </tr>`;
