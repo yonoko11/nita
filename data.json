@@ -1970,9 +1970,15 @@
    "index": 68,
    "cup": 17,
    "cup_ja": "ムーンカップ",
-   "pb": null,
-   "pb_date": null,
-   "history": [],
+   "pb": 119704,
+   "pb_date": "2026-10-22",
+   "history": [
+    {
+     "time": 119704,
+     "date": "2026-10-22",
+     "gain": null
+    }
+   ],
    "wr": 119152,
    "wr_since": null,
    "wr_gain": null,
@@ -1986,8 +1992,8 @@
      "name": "くまライド"
     }
    ],
-   "diff": null,
-   "pct": null
+   "diff": 552,
+   "pct": 0.46327380153081776
   },
   {
    "abbr": "bPG",
@@ -2693,9 +2699,9 @@
   }
  ],
  "total": {
-  "count": 16,
-  "pb": 1849155,
-  "wr": 1830606
+  "count": 17,
+  "pb": 1968859,
+  "wr": 1949758
  },
- "updated_at": "2026-10-22 22:35"
+ "updated_at": "2026-10-22 22:36"
 }
