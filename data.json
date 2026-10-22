@@ -673,9 +673,9 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 109096,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 108694,
+   "wr_since": "2026-10-22",
+   "wr_gain": 402,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -2697,5 +2697,5 @@
   "pb": 1849155,
   "wr": 1830606
  },
- "updated_at": "2026-10-21 19:49"
+ "updated_at": "2026-10-22 22:35"
 }
