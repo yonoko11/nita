@@ -16,8 +16,10 @@
     --sub: #9a9a9a;
     --line: #262626;
     --hover: #111;
-    --good: #7fd88f;   /* WR との差が小さい */
-    --far: #e39a9a;    /* WR との差が大きい */
+    --near: #7fd0f0;   /* WR との差が 1 秒未満（水色） */
+    --good: #7fd88f;   /* 1 秒台（緑） */
+    --mid: #f0d77f;    /* 2 秒台（黄色） */
+    --far: #e39a9a;    /* 3 秒以上（赤） */
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; background: var(--bg); color: var(--text); }
@@ -92,7 +94,9 @@
   .wr-gain { color: var(--text); margin-left: 10px; }
   .none { color: #555; }
   .sub { color: var(--sub); }
+  .near { color: var(--near); }
   .good { color: var(--good); }
+  .mid { color: var(--mid); }
   .far { color: var(--far); }
 
   tr.detail > td { background: var(--hover); padding: 6px 10px 18px 100px; white-space: normal; }
@@ -187,11 +191,12 @@ function fmtPct(p) {
   return (p > 0 ? "+" : p < 0 ? "-" : "±") + Math.abs(p).toFixed(2) + "%";
 }
 function fmtDate(d) { return d ? d.replaceAll("-", "/") : ""; }
-function diffClass(c) {
-  if (c.pct === null) return "";
-  if (c.pct <= 1) return "good";   // WR との差が 1% 以内
-  if (c.pct >= 3) return "far";    // 3% 以上
-  return "";
+function diffClass(c) {  // WR との差の秒で色を分ける
+  if (c.diff === null) return "";
+  if (c.diff < 1000) return "near";  // +0.999 まで（WR 以上も）
+  if (c.diff < 2000) return "good";  // +1.000〜+1.999
+  if (c.diff < 3000) return "mid";   // +2.000〜+2.999
+  return "far";                      // +3.000 以上
 }
 function esc(s) { return String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch])); }
 function cupImg(i) { return "images/cup/" + String(i).padStart(2, "0") + ".png"; }
