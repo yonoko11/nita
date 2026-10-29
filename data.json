@@ -2689,9 +2689,15 @@
    "index": 95,
    "cup": 23,
    "cup_ja": "トゲゾーカップ",
-   "pb": null,
-   "pb_date": null,
-   "history": [],
+   "pb": 155724,
+   "pb_date": "2026-10-29",
+   "history": [
+    {
+     "time": 155724,
+     "date": "2026-10-29",
+     "gain": null
+    }
+   ],
    "wr": 154424,
    "wr_since": null,
    "wr_gain": null,
@@ -2705,14 +2711,14 @@
      "name": "くまライド"
     }
    ],
-   "diff": null,
-   "pct": null
+   "diff": 1300,
+   "pct": 0.8418380562606848
   }
  ],
  "total": {
-  "count": 18,
-  "pb": 2056237,
-  "wr": 2036490
+  "count": 19,
+  "pb": 2211961,
+  "wr": 2190914
  },
- "updated_at": "2026-10-29 07:31"
+ "updated_at": "2026-10-29 18:28"
 }
