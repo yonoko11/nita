@@ -28,13 +28,16 @@ html { background: var(--bg); }
 body {
   margin: 0; min-height: 100vh; color: var(--text);
   font: 15px/1.5 "Noto Sans JP", "Segoe UI", "Yu Gothic UI", "Hiragino Sans", Meiryo, sans-serif;
-  /* ぼんやりした光（星の点は入れない）。ページといっしょに流れる */
-  background:
+  /* ぼんやりした光（星の点は入れない）。ページといっしょに流れる。
+     上の 2 つ（クリーム色・紫）は上だけ、青（左）と紫（右）は 2400px ごとにくり返して一番下まで置く */
+  background-color: var(--bg);
+  background-image:
     radial-gradient(ellipse 760px 260px at 68% 150px, rgba(255, 236, 204, .16), transparent 70%),
     radial-gradient(ellipse 1300px 520px at 62% 180px, rgba(150, 105, 230, .20), transparent 72%),
     radial-gradient(ellipse 1000px 800px at 8% 1100px, rgba(70, 105, 220, .13), transparent 70%),
-    radial-gradient(ellipse 900px 700px at 95% 1900px, rgba(150, 105, 230, .10), transparent 70%),
-    var(--bg);
+    radial-gradient(ellipse 900px 700px at 95% 1900px, rgba(150, 105, 230, .10), transparent 70%);
+  background-size: 100% 100%, 100% 100%, 100% 2400px, 100% 2400px;
+  background-repeat: no-repeat, no-repeat, repeat-y, repeat-y;
 }
 a { color: var(--link); transition: color .15s; }
 a:hover { color: var(--link-hover); }
