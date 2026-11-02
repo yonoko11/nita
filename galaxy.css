@@ -1,0 +1,185 @@
+/* 「案A 銀河の色」の見た目。公開ページ（site/index.html）と管理画面（manage.html）で共有する。
+   数字は 見た目のルール.md のとおり。直すときは、先にルール表を直す。 */
+:root {
+  --bg: #06040f;
+  --text: #f5f0ff;
+  --sub: #c9bfe6;
+  --strong: #fff1d6;       /* クリーム色：箱の数字・カップ名・「すべて」 */
+  --none: #8d84ad;         /* 未入力の「—」 */
+  --accent: #ffa04d;       /* 並べ替えの印・最終更新の ● */
+  --link: #b9a6ff;
+  --link-hover: #ffe0a8;
+  --line: #2e2552;
+  --line-row: #221b3d;
+  --field-line: #3a2f66;
+  --hover-line: #4a3c80;
+  --box: rgba(13, 9, 30, .92);
+  --field: rgba(13, 9, 30, .85);
+  --row-hover: rgba(167, 139, 250, .09);
+  --near: #8cc8ff;   /* WR との差が 1 秒未満（水色） */
+  --good: #86e0b0;   /* 1 秒台（緑） */
+  --mid: #ffd38a;    /* 2 秒台（黄色） */
+  --far: #ff9a7a;    /* 3 秒以上（赤） */
+  /* 表の列：コース・自己ベスト・WR・差・差（%）・差の横棒・PB 更新日・WR 更新日 */
+  --cols: minmax(0, 1fr) 104px 104px 84px 72px 100px 92px 150px;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0; min-height: 100vh; color: var(--text);
+  font: 15px/1.5 "Noto Sans JP", "Segoe UI", "Yu Gothic UI", "Hiragino Sans", Meiryo, sans-serif;
+  /* ぼんやりした光（星の点は入れない）。ページといっしょに流れる */
+  background:
+    radial-gradient(ellipse 760px 260px at 68% 150px, rgba(255, 236, 204, .16), transparent 70%),
+    radial-gradient(ellipse 1300px 520px at 62% 180px, rgba(150, 105, 230, .20), transparent 72%),
+    radial-gradient(ellipse 1000px 800px at 8% 1100px, rgba(70, 105, 220, .13), transparent 70%),
+    radial-gradient(ellipse 900px 700px at 95% 1900px, rgba(150, 105, 230, .10), transparent 70%),
+    var(--bg);
+}
+a { color: var(--link); transition: color .15s; }
+a:hover { color: var(--link-hover); }
+.num { font-variant-numeric: tabular-nums; }
+.page {
+  max-width: 1180px; margin: 0 auto; padding: 48px 24px 56px;
+  display: flex; flex-direction: column; gap: 28px;
+}
+
+/* ---------- 入力欄とボタン ---------- */
+input, button { font: inherit; }
+.field {
+  height: 40px; padding: 0 12px; font-size: 14px; color: var(--text);
+  background: var(--field); border: 1px solid var(--field-line); border-radius: 10px;
+}
+.field:focus { outline: none; border-color: var(--sub); }
+.btn {
+  height: 40px; padding: 0 16px; font-size: 14px; color: var(--sub); cursor: pointer;
+  background: transparent; border: 1px solid var(--field-line); border-radius: 10px;
+  transition: color .15s, border-color .15s, box-shadow .15s;
+}
+.btn:hover { color: var(--text); border-color: var(--hover-line); }
+.btn:disabled { color: var(--hover-line); border-color: var(--hover-line); cursor: default; }
+.btn.primary, .btn.on {  /* クリーム色の大事なボタン・選んでいる「すべて」 */
+  color: #1a1030; font-weight: 600; background: var(--strong); border-color: var(--strong);
+  box-shadow: 0 0 16px rgba(255, 241, 214, .35);
+}
+.btn.small { height: 28px; padding: 0 10px; font-size: 12px; border-radius: 8px; }
+
+/* ---------- 見出し ---------- */
+.top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; }
+.top .titles { display: flex; flex-direction: column; gap: 8px; }
+.title {
+  margin: 0; font-size: 34px; font-weight: 700; letter-spacing: .02em;
+  background: linear-gradient(100deg, #fff1d6 0%, #e9d8ff 45%, #9fb6ff 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent; caret-color: #fff1d6;
+}
+.title::selection { color: #1a1030; background: #fff1d6; }
+.lead { margin: 0; font-size: 14px; color: var(--sub); }
+.stamp { margin: 0; font-size: 13px; color: var(--sub); }
+.dot { color: var(--accent); }
+
+/* ---------- 上の 4 つの箱 ---------- */
+.boxes {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px;
+  background: var(--line); border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+  box-shadow: 0 0 60px rgba(140, 100, 230, .18);
+}
+.box { background: var(--box); padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+.box .label { font-size: 12px; color: var(--sub); }
+.box b { font-size: 30px; font-weight: 600; line-height: 1; color: var(--strong); }
+.box b small { font-size: 16px; font-weight: 400; color: var(--sub); }
+.progress { height: 6px; background: var(--line-row); border-radius: 3px; overflow: hidden; }
+.progress div {
+  height: 100%; background: linear-gradient(90deg, #6d8cff, #a78bfa, #fff1d6) left / 100% 100% no-repeat;
+  box-shadow: 0 0 10px rgba(109, 140, 255, .6);
+}
+
+/* ---------- 差の色ごとの数 ---------- */
+.legend { display: flex; flex-direction: column; gap: 10px; }
+.legend .keys { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: var(--sub); }
+.legend .keys b { color: var(--text); }
+.legend .bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; gap: 2px; }
+.near { color: var(--near); } .good { color: var(--good); } .mid { color: var(--mid); } .far { color: var(--far); }
+.none { color: var(--none); }
+.sub { color: var(--sub); }
+.bg-near { background: var(--near); } .bg-good { background: var(--good); }
+.bg-mid { background: var(--mid); } .bg-far { background: var(--far); }
+
+/* ---------- 絞り込み ---------- */
+.filters { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.cupbtn {
+  width: 40px; height: 40px; padding: 3px; border: 1px solid transparent; border-radius: 10px;
+  background: none; display: grid; place-items: center; cursor: pointer;
+  transition: border-color .15s, box-shadow .15s;
+}
+.cupbtn img { width: 32px; height: 32px; object-fit: contain; opacity: .55; transition: opacity .15s; }
+.cupbtn:hover, .cupbtn.on { border-color: var(--hover-line); box-shadow: 0 0 14px rgba(167, 139, 250, .45); }
+.cupbtn:hover img, .cupbtn.on img { opacity: 1; }
+.filters .spacer { flex: 1 1 12px; }
+.filters label { display: flex; align-items: center; gap: 6px; font-size: 14px; color: var(--sub); cursor: pointer; }
+.filters input[type="checkbox"] { accent-color: #a78bfa; }
+.filters .search { width: 200px; }
+
+/* ---------- 表 ---------- */
+.table { display: flex; flex-direction: column; font-size: 15px; }
+.tr { display: grid; grid-template-columns: var(--cols); align-items: center; column-gap: 16px; }
+.r { text-align: right; }
+.thead { font-size: 12px; color: var(--sub); padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.thead span { cursor: pointer; user-select: none; white-space: nowrap; transition: color .15s; }
+.thead span:hover, .thead span.sorted { color: var(--text); }
+.thead .mark { color: var(--accent); }
+.thead span.nosort { cursor: default; }
+.thead span.nosort:hover { color: var(--sub); }
+.cuphead { display: flex; align-items: center; gap: 10px; padding: 24px 12px 8px; }
+.cuphead img { width: 28px; height: 28px; object-fit: contain; filter: drop-shadow(0 0 6px rgba(255, 241, 214, .45)); }
+.cuphead .name { font-size: 16px; font-weight: 600; color: var(--strong); }
+.cuphead .sum { font-size: 13px; color: var(--sub); }
+.row { padding: 8px 12px; border-bottom: 1px solid var(--line-row); cursor: pointer; transition: background .15s; }
+.row:hover, .row.open { background: var(--row-hover); }
+.row.open { border-bottom-color: transparent; }
+.course { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.course img {
+  width: 72px; height: 50px; object-fit: cover; flex: none;
+  border-radius: 8px; border: 1px solid var(--field-line); background: #0d091e;
+}
+.course .names { display: flex; flex-direction: column; min-width: 0; }
+.course .en { font-size: 12px; color: var(--sub); }
+.time { font-size: 17px; }
+.time.wr { color: var(--sub); }
+.diff { font-size: 17px; font-weight: 600; }
+.small { font-size: 13px; }
+.gapbar { height: 6px; background: #1a1433; border-radius: 3px; overflow: hidden; }
+.gapbar div { height: 100%; }
+.wr-gain { color: var(--text); margin-left: 8px; }
+.empty { padding: 24px 12px; color: var(--sub); }
+
+/* 行を押すと開く履歴 */
+.detail { padding: 6px 12px 18px 98px; background: var(--row-hover); border-bottom: 1px solid var(--line-row); }
+.history { border-collapse: collapse; }
+.history th { font-size: 12px; font-weight: 400; color: var(--sub); text-align: left; padding: 4px 24px 4px 0; }
+.history td { padding: 3px 24px 3px 0; }
+.history .r { text-align: right; }
+.history tr.best td { font-weight: 600; }
+
+/* ---------- 下の説明 ---------- */
+footer.notes { font-size: 13px; line-height: 1.9; color: var(--sub); border-top: 1px solid var(--line); padding-top: 20px; }
+
+/* ---------- スマホの幅 ---------- */
+@media (max-width: 760px) {
+  :root { --cols: minmax(0, 1fr) 70px 70px 56px; }
+  .wide { display: none !important; }
+  .page { padding: 28px 12px 40px; gap: 22px; }
+  .title { font-size: 26px; }
+  .boxes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .box { padding: 14px 14px; gap: 8px; }
+  .box b { font-size: 22px; }
+  .box b small { font-size: 13px; }
+  .cupbtn { width: 34px; height: 34px; }
+  .cupbtn img { width: 28px; height: 28px; }
+  .filters .search { width: 100%; }
+  .tr { column-gap: 8px; font-size: 14px; }
+  .thead, .row { padding-left: 6px; padding-right: 6px; }
+  .cuphead { padding: 20px 6px 6px; }
+  .time, .diff { font-size: 14px; }
+  .course .names { font-size: 13px; line-height: 1.35; }
+  .detail { padding: 6px 6px 14px 16px; }
+}
