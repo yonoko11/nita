@@ -307,9 +307,9 @@
      "gain": null
     }
    ],
-   "wr": 118640,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 118417,
+   "wr_since": "2026-11-02",
+   "wr_gain": 223,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -320,8 +320,8 @@
      "name": "くまライド"
     }
    ],
-   "diff": 373,
-   "pct": 0.3143964935940661
+   "diff": 596,
+   "pct": 0.5033061131425386
   },
   {
    "abbr": "SGF",
@@ -1646,9 +1646,9 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 113902,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 113641,
+   "wr_since": "2026-11-02",
+   "wr_gain": 261,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -2728,7 +2728,7 @@
  "total": {
   "count": 19,
   "pb": 2211465,
-  "wr": 2190914
+  "wr": 2190691
  },
- "updated_at": "2026-10-31 09:01"
+ "updated_at": "2026-11-02 21:49"
 }
