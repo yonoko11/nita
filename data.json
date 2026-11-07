@@ -147,9 +147,9 @@
      "gain": null
     }
    ],
-   "wr": 101327,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 100889,
+   "wr_since": "2026-11-07",
+   "wr_gain": 438,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -160,8 +160,8 @@
      "name": "くまライド"
     }
    ],
-   "diff": 16,
-   "pct": 0.015790460587997275
+   "diff": 454,
+   "pct": 0.4499995044058322
   },
   {
    "abbr": "SSC",
@@ -243,9 +243,9 @@
      "gain": null
     }
    ],
-   "wr": 107877,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 107557,
+   "wr_since": "2026-11-07",
+   "wr_gain": 320,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -256,8 +256,8 @@
      "name": "くまライド"
     }
    ],
-   "diff": 387,
-   "pct": 0.35874190049778915
+   "diff": 707,
+   "pct": 0.657325883020166
   },
   {
    "abbr": "TH",
@@ -275,9 +275,9 @@
      "gain": null
     }
    ],
-   "wr": 124610,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 124214,
+   "wr_since": "2026-11-07",
+   "wr_gain": 396,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -288,8 +288,8 @@
      "name": "くまライド"
     }
    ],
-   "diff": 1390,
-   "pct": 1.115480298531418
+   "diff": 1786,
+   "pct": 1.4378411451205177
   },
   {
    "abbr": "TM",
@@ -467,9 +467,9 @@
      "gain": null
     }
    ],
-   "wr": 102983,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 102568,
+   "wr_since": "2026-11-07",
+   "wr_gain": 415,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -480,8 +480,8 @@
      "name": "くまライド"
     }
    ],
-   "diff": 1160,
-   "pct": 1.1263995028305642
+   "diff": 1575,
+   "pct": 1.5355666484673582
   },
   {
    "abbr": "CC",
@@ -664,9 +664,9 @@
      "gain": null
     }
    ],
-   "wr": 87145,
-   "wr_since": "2026-10-21",
-   "wr_gain": 1,
+   "wr": 86816,
+   "wr_since": "2026-11-07",
+   "wr_gain": 329,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -677,8 +677,8 @@
      "name": "くまライド"
     }
    ],
-   "diff": 1009,
-   "pct": 1.1578403809742384
+   "diff": 1338,
+   "pct": 1.5411905639513455
   },
   {
    "abbr": "rCCB",
@@ -716,9 +716,9 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 107529,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 107054,
+   "wr_since": "2026-11-07",
+   "wr_gain": 475,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -1054,13 +1054,13 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 105908,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 105342,
+   "wr_since": "2026-11-07",
+   "wr_gain": 566,
    "wr_combo": [
     {
-     "id": "aa017b6093ff",
-     "name": "ピーチ"
+     "id": "56607099409d",
+     "name": "ヨッシー"
     },
     {
      "id": "0c76420da035",
@@ -1158,9 +1158,9 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 123551,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 123396,
+   "wr_since": "2026-11-07",
+   "wr_gain": 155,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -1236,9 +1236,9 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 110785,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 110216,
+   "wr_since": "2026-11-07",
+   "wr_gain": 569,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -1444,9 +1444,9 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 85655,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 85645,
+   "wr_since": "2026-11-07",
+   "wr_gain": 10,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -1470,9 +1470,9 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 111616,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 111092,
+   "wr_since": "2026-11-07",
+   "wr_gain": 524,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -1678,9 +1678,9 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 84597,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 84444,
+   "wr_since": "2026-11-07",
+   "wr_gain": 153,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -2126,9 +2126,9 @@
    "pb": null,
    "pb_date": null,
    "history": [],
-   "wr": 91479,
-   "wr_since": null,
-   "wr_gain": null,
+   "wr": 90953,
+   "wr_since": "2026-11-07",
+   "wr_gain": 526,
    "wr_combo": [
     {
      "id": "56607099409d",
@@ -2734,7 +2734,7 @@
  "total": {
   "count": 20,
   "pb": 2299619,
-  "wr": 2277836
+  "wr": 2275938
  },
- "updated_at": "2026-11-04 13:11"
+ "updated_at": "2026-11-07 12:56"
 }
